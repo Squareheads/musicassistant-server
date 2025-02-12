@@ -20,8 +20,8 @@ source .venv/bin/activate
 
 echo "Installing development dependencies..."
 
-pip install --upgrade pip
-pip install --upgrade uv
+pip3.12 install --upgrade pip
+pip3.12 install --upgrade uv
 uv pip install -e "."
 uv pip install -e ".[test]"
 uv pip install -r requirements_all.txt

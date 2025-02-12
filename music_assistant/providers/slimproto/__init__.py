@@ -257,6 +257,7 @@ class SlimprotoProvider(PlayerProvider):
             raise SetupFailedError(
                 "Unable to start the Slimproto server - "
                 "is one of the required TCP ports already taken ?"
+                "" + err
             ) from err
 
     async def loaded_in_mass(self) -> None:
